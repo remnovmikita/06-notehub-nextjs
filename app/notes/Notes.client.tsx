@@ -12,7 +12,9 @@ import NoteList from "@/components/NoteList/NoteList"
 import NoteForm from "@/components/NoteForm/NoteForm"
 import Modal from "@/components/Modal/Modal"
 import { useDebouncedCallback } from "use-debounce"
-import Loading from "../loading"
+// import Loading from "../loading"
+
+
 export default function NotesClient(){
 
   const [searchNote, setSearchNote] = useState("")
@@ -21,8 +23,6 @@ export default function NotesClient(){
 
   const openModal =()=> setIsModalOpen(true) 
   const closeModal =()=> setIsModalOpen(false)
-
- 
 
   const {data, isLoading, isSuccess, error} = useQuery({
     queryKey:["notes", searchNote, currentPage],
