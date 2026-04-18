@@ -1,6 +1,6 @@
 
 import { fetchNoteById } from "@/lib/api"
-import NoteClient from "./noteId.client"   // клиентский компонент
+import NoteClient from "./NoteDetails.client"
 
 import {
   dehydrate,
