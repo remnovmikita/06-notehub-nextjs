@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import TanstakProvider from "@/components/TanStackProvider/TanStackProvider"
+import TanStackProvider  from "@/components/TanStackProvider/TanStackProvider"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,11 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
-        <TanstakProvider>
+        <TanStackProvider >
         <Header></Header>
         {children}
         <Footer></Footer>
-        </TanstakProvider>
+        </TanStackProvider>
         </body>
     </html>
   );

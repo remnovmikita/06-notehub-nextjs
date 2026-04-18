@@ -11,7 +11,9 @@ import { createNote } from "@/lib/api"
 const FormValidationSheme = Yup.object().shape( {
     title: Yup.string().min(3).max(50).required(),
     content: Yup.string().max(500),
-    tag: Yup.string().required()
+      tag: Yup.string()
+    .oneOf(["Todo", "Work", "Personal", "Meeting", "Shopping"])
+    .required("Tag is required"),
 })
 
 
