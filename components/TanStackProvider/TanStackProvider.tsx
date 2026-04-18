@@ -7,7 +7,7 @@ import {
 import { useState } from "react"
 
 export default function Providers({ children }: { children: React.ReactNode }) {
-  // ✅ создаём QueryClient через useState
+
   const [queryClient] = useState(
     () =>
       new QueryClient({
