@@ -1,5 +1,5 @@
   import { noteById } from "@/lib/api"
-import css from "./NoteId.module.css"
+import css from "./noteId.module.css"
   
   type Props ={
         params :Promise<{notesId:string}>
