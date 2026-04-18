@@ -7,8 +7,6 @@ import {
   QueryClient,
 } from '@tanstack/react-query'
 
-
-
 export default async function Notes(){
     const queryClient = new QueryClient()
 
